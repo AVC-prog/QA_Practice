@@ -1,5 +1,6 @@
-For the postman practice folder I followed freecodecamp's tutorial and I used this repository as guidance: https://github.com/vdespa/introduction-to-postman-course/blob/main/simple-books-api.md
+There are 4 main folders, each of them containing an amalgamation of projects and problem sets in the respective areas.
 
-For the Cypress practice folde I used:
+For the postman practice project I followed freecodecamp's tutorial and I used this repository as guidance: https://github.com/vdespa/introduction-to-postman-course/blob/main/simple-books-api.md
 
-For the Selenium practice folder I followed the freecodecamp tutorial.
+For the Cypress practice folder I used: 
+
