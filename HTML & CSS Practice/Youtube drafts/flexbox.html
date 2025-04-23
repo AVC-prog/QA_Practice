@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox (Flexible box) Practice</title>
+    </head>
+    <body>
+        <div style="
+            display:flex;
+            flex-direction: row;">
+            <div style=" background-color: lightpink">div 1 text</div>
+            <div style=" background-color: rgb(120, 230, 120)">div 2
+                <p>more text</p>
+            </div>
+        </div>
+
+        <div style="
+            display:flex;
+            flex-direction: row;
+            margin-top: 20px;">
+            <div style=" background-color: lightpink; width: 100px;">div 1 text</div>
+            <div style=" background-color: rgb(120, 230, 120); flex: 1"> flex 1 (equivalent to 1fr in grid)
+                <p>more text</p>
+            </div>
+        </div>
+
+        <div style="
+            display:flex;
+            flex-direction: row;
+            margin-top: 20px;">
+            <div style=" background-color: rgb(120, 230, 120); width: 100px;">div 1 text</div>
+            <div style=" background-color: rgb(174, 127, 235); flex: 1"> flex 1 (equivalent to 1fr in grid)</div>
+            <div style=" background-color: lightpink; flex: 2"> flex 2 (takes 2x more space from flex 1)
+            </div>
+        </div>
+
+        <div style="
+            display:flex;
+            margin-top: 20px;
+            flex-direction: row;
+            justify-content: space-between;">
+            <div style=" background-color: rgb(120, 230, 120); width: 100px;">div 1 text</div>
+            <div style=" background-color: rgb(174, 127, 235); width: 100px;"> 100px </div>
+            <div style=" background-color: lightpink; width: 100px;"> 100px
+            </div>
+        </div>
+
+        <div style="
+            display:flex;
+            margin-top: 20px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;">
+            <div style=" background-color: rgb(120, 230, 120); width: 100px;">div 1 text</div>
+            <div style=" background-color: rgb(174, 127, 235); width: 100px;"> 100px </div>
+            <div style=" background-color: lightpink; width: 100px;"> 100px
+            </div>
+        </div>
+    </body>
+</html>

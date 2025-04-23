@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid practice</title>
+    </head>
+    <body style="padding-bottom: 1000px">
+        <div style="
+            display: grid;
+            margin-top: 30px;
+            grid-template-columns: 100px 100px;
+            ">
+            <div style="background-color: lightcoral;">
+                div 1
+                <p>text</p> 
+            </div>
+            <div style="background-color: lightpink;">
+                div 2
+            </div>
+        </div>
+
+        <div style="
+            display: grid;
+            margin-top: 30px;
+            grid-template-columns: 100px 100px 100px;
+            ">
+            <div style="background-color: lightcoral;">
+                div 1
+                <p>text</p> 
+            </div>
+            <div style="background-color: lightpink;">
+                div 2
+            </div>
+
+            <div style="background-color: lightgray;">
+                div 3
+            </div>
+
+            <div style="background-color: lightgoldenrodyellow;">
+                div 4
+            </div>
+        </div>
+
+
+        <div style="
+            display: grid;
+            margin-top: 30px;
+            grid-template-columns: 100px 1fr;
+            ">
+            <div style="background-color: lightcoral;">
+                div 1
+            </div>
+            <div style="background-color: lightpink;">
+                1 fr (takes the remaining space)
+            </div>
+        </div>
+
+        <div style="
+            display: grid;
+            margin-top: 30px;
+            grid-template-columns: 100px 1fr 1fr;
+            ">
+            <div style="background-color: lightcoral;">
+                div 1
+            </div>
+            <div style="background-color: lightpink;">
+                1 fr (takes the remaining space)
+            </div>
+            <div style="background-color: lightslategrey;">
+                2fr. Now these two fr take up the remaining space equally
+            </div>
+        </div>
+
+
+        <div style="
+            display: grid;
+            margin-top: 30px;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 20px;
+            ">
+            <div style="background-color: lightcoral; height: 200px;">
+                All of these have equally spaced rectangles now
+            </div>
+            <div style="background-color: lightpink; height: 200px;">
+                1 fr (takes the remaining space)
+            </div>
+            <div style="background-color: lightslategrey; height: 200px;">
+                2fr. Now these two fr take up the remaining space equally
+            </div>
+            <div style="background-color: lightskyblue; height: 200px;">
+                All of these have equally spaced rectangles now
+            </div>
+            <div style="background-color: lightsteelblue; height: 200px;">
+                1 fr (takes the remaining space)
+            </div>
+            <div style="background-color: lightseagreen; height: 200px;">
+                2fr. Now these two fr take up the remaining space equally
+            </div>
+        </div>
+    </body>
+</html>
