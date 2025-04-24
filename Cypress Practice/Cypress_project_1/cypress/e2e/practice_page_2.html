@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice page for cypress</title>
+    <style>
+        .clickable {
+            cursor: pointer;
+            background-color: blanchedalmond;
+            border-radius: 12px;
+            transition: all 1s ease;
+            padding: 10px 20px;
+            margin: 5px;
+        }
+        .subsection {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .subsection_2 {
+            font-family: Arial;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .clickable:hover {
+            box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.3);
+            background-color: rgb(240, 110, 23);
+        }
+        .section {
+            padding: 20px;
+            margin: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+        .input-field {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        button, a {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="subsection">My local page for running Cypress tests</h1>
+
+    <h2 class="subsection_2">Practice for Cypress.</h2>
+    
+    <div class="section" id="section1">
+        <h3>Section 1: Click the buttons</h3>
+        <p>Run cypress tests to check if the buttons go to the correct destinations.</p>
+        <div class="button-group">
+            <a href="https://www.youtube.com/" target="_blank">
+                <button class="clickable">YouTube</button>
+            </a>
+            <a href="https://www.overleaf.com/" target="_blank">
+                <button class="clickable">Overleaf</button>
+            </a>
+            <a href="https://www.google.com/" target="_blank">
+                <button class="clickable">Google</button>
+            </a>
+            <a href="https://www.stackexchange.com/" target="_blank">
+                <button class="clickable">Stackexchange</button>
+            </a>
+        </div>
+    </div>
+
+    
+    <div class="section" id="form-section">
+        <h3>Section 2: Fill Out the Form</h3>
+        <p>Run cypress tests to see if entering a name and an email to check if this works.</p>
+        <form id="sample-form">
+            <input type="text" id="name" class="input-field" placeholder="Enter your name" required>
+            <input type="email" id="email" class="input-field" placeholder="Enter your email" required>
+            <button type="submit" class="clickable">Submit</button>
+        </form>
+    </div>
+
+    <div class="section" id="toggle-section">
+        <h3>Section 3: Toggle Visibility</h3>
+        <p>Run a cypress test to ensure if the content is correctly shown or hidden when the button is clicked. </p>
+        <button id="toggle-btn" class="clickable">Hide the text bellow</button>
+        <div id="toggled-content">
+            <p>Hide me!</p>
+        </div>
+    </div>
+
+    <div class="section" id="color-change-section">
+        <h3>Section 4: Change Background Color</h3>
+        <p>Run a cypress test to see if the background color changes or not.</p>
+        <button id="change-bg-btn" class="clickable">Change Background Color</button>
+    </div>
+
+    <script>
+        document.getElementById('toggle-btn').addEventListener('click', function() {
+            const content = document.getElementById('toggled-content');
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        });
+
+        document.getElementById('change-bg-btn').addEventListener('click', function() {
+            document.body.style.backgroundColor = 'lightblue';
+        });
+    </script>
+</body>
+</html>
